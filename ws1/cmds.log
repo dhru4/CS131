@@ -1,0 +1,8 @@
+    1  history
+    2  clear
+    3  ls
+    4  wget www.github.com
+    5  ls
+    6  mkdir ws1
+    7  cd ws1
+    8  history >> cmds.log
