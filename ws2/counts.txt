@@ -1,0 +1,8 @@
+ Line counts for verifed reviews:
+1439 
+ Word counts for verifed reviews:
+588540 
+ Line counts for unverifed reviews:
+99 
+ Word counts for unverifed reviews:
+43387 
