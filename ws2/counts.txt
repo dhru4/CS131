@@ -1,9 +1,0 @@
-Word count for verified:
-44402864
-Line count for verified:
-229346
-
-Word count for unverified:
-505766903
-Line count for unverified:
-2876175
