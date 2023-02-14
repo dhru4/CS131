@@ -1,0 +1,13 @@
+  590  mkdir ws3
+  591  cp ws2/amazon_reviews_us_Books_v1_02.tsv ws3/
+  592  cd ws3
+  593  ls
+  594  cut --help
+  595  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -3
+  596  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -3 > ws3.txt
+  597  cat ws3.txt 
+  598  nano ws3.txt 
+  599  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -3
+  600  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -3 >> ws3.txt 
+  601  nano ws3.txt 
+  602  history > cmds.log
