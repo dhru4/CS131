@@ -1,0 +1,29 @@
+1. Made a directory named a1 and changed to it.
+2. My home directory path is /mnt/scratch/dhru23sp. The command i used was 
+   "echo $HOME".
+3. My uid is 1046(dhru23sp) and my group is 1048(dhru23sp). I used the command
+   "id" to find out the uid and the groups.
+4. The command I used to remove the execute permisiion for myself is "chmod
+   u-x". After that I cannot cd into that directory. I can use ls to list but
+   I cannot use ls -l to list the details of the files. I also cannot create 
+   files under temp folder.
+5. I was not able to copy temp2 to temp3 using cp. I had to use cp -r to move  
+   the directory with its content to a new location.  
+6. Yes, I was able to find out which file contained information about the 
+   memory. I used ls /proc | grep mem. I than opened the "meminfo" file and 
+   it had informaton about the memory. The file with cpu info would be
+   "cpuinfo".
+7. I used head /proc/meminfo command to find out the toal availbale memory on
+   our server. Toal memory on our server is 73080640 kb which is roughly equal
+    to 73 GB.
+8. There are 255 processors in our server. The architecture name is "POWER8"/
+   "pSeries". The processor speed is 3.525 GHz.
+9. The file size is 0.0078 GB. Total number of lines in the file are 110350.
+10.I used the command grep -i "great" downloaded_hastags_extended.csv |
+   wc -l. 57 hastags have the word "great".
+11.The file has UTF-8 encoding
+12.Converted the file 
+13.Number of unique users are 177.
+   Number of unique tweets that were tweeted are 64698
+   Number of unique hastags are 20258. It is less than the number of tweets.
+     

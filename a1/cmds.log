@@ -1,0 +1,68 @@
+  639  ls
+  640  mkdir a1
+  641  cd a1/
+  642  echo $HOME
+  643  nano a1.txt
+  644  id
+  645  nano a1.txt
+  646  groups dhru23sp 
+  647  mkdir temp
+  648  ls
+  649  chmod u-x temp
+  650  cd temp/
+  651  ls temp/
+  652  ls -l temp/
+  653  nano a1.txt
+  654  ls
+  655  mkdir temp2
+  656  mkdir temp3
+  657  cp temp2 temp3/
+  658  cp -r temp2 temp3/
+  659  ls
+  660  cd temp3/
+  661  ls
+  662  nano a1.txt
+  663  cd ..
+  664  ls
+  665  nano a1.txt 
+  666  ls /proc | grep mem
+  667  cat meminfo
+  668  cat /proc/meminfo 
+  669  nano a1.txt 
+  670  cat /proc/cpuinfo 
+  671  head /proc/cpuinfo 
+  672  clear
+  673  head /proc/cpuinfo 
+  674  tail /proc/cpuinfo 
+  675  cat /proc/cpuinfo 
+  676  nano a1.txt 
+  677  cp /home/test/A1/downloaded_hashtags_extend.csv /a1
+  678  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  679  cd .
+  680  cd ..
+  681  ls
+  682  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  683  cd a1/
+  684  ls
+  685  du -h -b downloaded_hashtags_extend.csv 
+  686  nano a1.txt 
+  687  wc -l downloaded_hashtags_extend.csv 
+  688  nano a1.txt 
+  689  grep -i downloaded_hashtags_extend.csv | wc -l
+  690  grep -i "great" downloaded_hashtags_extend.csv | wc -l
+  691  nano a1.txt 
+  692  cat downloaded_hashtags_extend.csv 
+  693  head downloaded_hashtags_extend.csv 
+  694  file downloaded_hashtags_extend.csv 
+  695  nano a1.txt 
+  696  iconv -f UTF-8 -t ASCII downloaded_hashtags_extend.csv 
+  697  file downloaded_hashtags_extend.csv 
+  699  head downloaded_hashtags_extend.csv 
+  700  cut -d',' -f1 downloaded_hashtags_extend.csv |sort|uniq -c| wc -l
+  701  cut -d ',' -f1 downloaded_hashtags_extend.csv |sort|uniq -c| wc -l
+  702  cut -d ',' -f 1 downloaded_hashtags_extend.csv |sort|uniq -c| wc -l
+  703  cut -d ',' -f 4 downloaded_hashtags_extend.csv |sort|uniq -c| wc -l
+  704  cut -d ',' -f 2 downloaded_hashtags_extend.csv |sort|uniq -c| wc -l
+  705  nano a1.txt 
+  707  cd a1/
+  708  history > cmds.log
