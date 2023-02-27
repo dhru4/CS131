@@ -1,0 +1,80 @@
+  733  ls
+  734  mkdir ws4
+  735  cd ws4
+  736  nano ~/.bashrc
+  737  source ~/.bashrc
+  738  l
+  739  nano ~/.bashrc
+  740  source ~/.bashrc
+  741  l
+  742  w
+  743  ls -la
+  744  ls -l -a
+  745  ls -la |wc
+  746  mkdir CUSTOMERS
+  747  mkdir PRODUCTS
+  748  ls
+  749  ls -al
+  750  cd ..
+  751  ls
+  752  cd ws3
+  753  ls
+  754  head amazon_reviews_us_Books_v1_02.tsv 
+  755  ls
+  756  cat ws3.txt 
+  757  cd ..
+  758  cd ws4
+  759  ls
+  760  customer_id="52615377"
+  761  awk -v id="$customer_id" -F '\t' '$2==id{print $8}' amazon_reviews_us_Books_v1_02.tsv > CUSTOMERS/"$customer_id".txt
+  762  cd ..
+  763  ls
+  764  cd ws3
+  765  ls
+  766  awk -v id="$customer_id" -F '\t' '$2==id{print $8}' amazon_reviews_us_Books_v1_02.tsv > cdws4/CUSTOMERS/"$customer_id".txt
+  767  cd ..
+  768  ls
+  769  cp ws3/amazon_reviews_us_Books_v1_02.tsv ws4/
+  770  cd ws4
+  771  ls
+  772  customer_id="52615377"
+  773  awk -v id="$customer_id" -F '\t' '$2==id{print $8}' amazon_reviews_us_Books_v1_02.tsv > CUSTOMERS/"$customer_id".txt
+  774  ls
+  775  cd CUSTOMERS/
+  776  ls
+  777  cat 52615377.txt 
+  778  clear
+  779  cd ..
+  780  cd ws3/
+  781  ls
+  782  cat ws3.txt 
+  783  cd ..
+  784  cd ws4/
+  785  ls
+  786  product_id="0525947647"
+  787  awk -v id="$product_id" -F '\t' '$1==id{print $8}' amazon_reviews_us_Books_v1_02.tsv > PRODUCTS/"$product_id".txt
+  788  ls
+  789  cd ws4
+  790  ls
+  791  cd CUSTOMERS/
+  792  ls
+  793  cd ..
+  794  file="CUSTOMERS/52615377.txt" 
+  795  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSTOMERS/CUSTOMERS_MEAN}"
+  796  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${CUSTOMERS/CUSTOMERS_MEAN}"
+  797  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "$file/CUSTOMERS/CUSTOMERS_MEAN}"
+  798  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "$file{CUSTOMERS/CUSTOMERS_MEAN}"
+  799  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSTOMERS/CUSTOMERS_MEAN}"
+  800  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSTOMERS/}"
+  801  sudo paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSTOMERS/}"
+  802  cd ..
+  803  ls
+  804  file="ws4/CUSTOMERS/52615377.txt" 
+  805  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSTOMERS/CUSTOMERS_MEAN}"
+  806  paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSclearTOMERS/CUSTOMERS_MEAN}"
+  807  clear
+  808* paste "$file" <(awk '{sum+=$1} END {print sum/NR}' "$file" | bc -l | sed 's/$/\tMEAN/') > "${file/CUSTOMERS/}"cl
+  809  clear
+  810  cd ws4/
+  811  ls
+  812  CUSTOMERS/
