@@ -1,0 +1,2 @@
+Mean helpfulness score for the mentioned customer id  4.46922
+Mean helpfulness score for the mentioned product id  3.84959
