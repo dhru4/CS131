@@ -1,0 +1,57 @@
+  971  mkdir ws5
+  972  rm test.txt 
+  973  ls
+  974  cd ws5
+  977  cd ..
+  978  ls
+  979  cd ws3
+  980  ls
+  981  cd ..
+  982  cp ws3/amazon_reviews_us_Books_v1_02.tsv ws5/
+  983  cd ws5
+  984  ls
+  985  head amazon_reviews_us_Books_v1_02.tsv 
+  986  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -200 | awk '{print $2}' > top_customers.txt
+  987  ls
+  988  cat top_customers.txt 
+  989  wc -l top_customers.txt 
+  990  for customer_id in $(head -200 top_customers.txt); do grep "^$customer_id" amazon_reviews_us_Books_v1_02.tsv     > cs131/ws5/CUSTOMERS/$customer_id.txt; done
+  991  for customer_id in $(head -200 top_customers.txt); do   grep "^$customer_id" amazon_reviews_us_Books_v1_02.tsv     > CUSTOMERS/$customer_id.txt; done
+  992  cd CUSTOMERS/
+  993  ls
+  994  cat 12598621.txt 
+  995  ls
+  996  cd ws5
+  997  ls
+  998  cd CUSTOMERS/
+  999  ls
+ 1000  cd ..
+ 1001  ls
+ 1002  rm -r CUSTOMERS/
+ 1003  cd C
+ 1004  ls
+ 1005  mkdir CUSTOMERS
+ 1006  ls
+ 1007  cat top_customers.txt 
+ 1008  history
+ 1009  for id in 'top_customers.txt' ; do grep -En "^.*\s${id}\s" amazon_reviews_us_Books_v1_02.tsv > CUSTOMERS/${id}.txt; done
+ 1010  cd CUSTOMERS/
+ 1011  ls
+ 1012  cat top_customers.txt.txt 
+ 1013  cd ..
+ 1014  cd CUSTOMERS/
+ 1015  rm top_customers.txt.txt 
+ 1016  cd ..
+ 1017  ls
+ 1018  head amazon_reviews_us_Books_v1_02.tsv 
+ 1019  for id in $(head -200 top_customers.txt); do grep -n "$id" amazon_reviews_us_Books_v1_02.tsv | cut -f13 > CUSTOMERS/$id.txt; done
+ 1020  cd CUSTOMERS/
+ 1021  ls
+ 1022  cat 49202417.txt 
+ 1023  clear
+ 1024  ls
+ 1025  cd ..
+ 1026  ls
+ 1027  cd ws5
+ 1028  ls
+ 1029  history > cmds.log
