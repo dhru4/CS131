@@ -1,0 +1,69 @@
+1. The top 10 users are
+    159 1290232189615894531
+    178 380648579
+    179 1229752606714728454
+    189 42836999
+    250 1219232377605644289
+    254 1231514832479948802
+    274 1495480590572961792
+    276 163018653
+    387 1891490382
+    527 18831926
+ 
+2. Top 10 users who got most replies are
+     31 29447428
+     36 140496030
+     36 172323296
+     37 1094971056358637568
+     39 544732668
+     46 3453306553
+     83 16050065
+    107 380648579
+    238 18831926
+  38743
+
+3. Top 10 users who retweeted the most are
+      2 1501731166302388228     [<ReferencedTweet id=1501682151762366465 type=retweeted]
+      2 1505016125305888772     [<ReferencedTweet id=1504958986042417157 type=retweeted]
+      2 1514694049353056256     [<ReferencedTweet id=1514676095190122497 type=retweeted]
+      2 1518238702362939392     [<ReferencedTweet id=1518237680487829505 type=retweeted]
+      2 1518238717495889925     [<ReferencedTweet id=1518237300290949121 type=retweeted]
+      2 1520449322084712449     [<ReferencedTweet id=1520447284261138434 type=retweeted]
+      3 1481364611056259082     [<ReferencedTweet id=1481363299077955593 type=retweeted]
+      3 1481384452580380672     [<ReferencedTweet id=1481381398493732866 type=retweeted]
+      3 1482896525202182148     [<ReferencedTweet id=1482842029579190273 type=retweeted]
+      3 1494403799544475654     [<ReferencedTweet id=1494394492081876999 type=retweeted]
+  
+4. Top 30 used hstags are 
+    80 Ottawa
+     85 longcovid
+     87 TikTok
+     93 Partygate
+     97 Covid19
+     98 "cathrynhartt,harttandsoul,actor,actorslife"
+    105 Russian
+    106 BoycottATP
+    107 ClimateCrisis
+    107 "PutinHitler,StandWithUkraine,PutinHitler,PutinWarCriminal,StopPutinNOW,RussiaSanctions,BoycottRussia"
+    108 COVIDisAirborne
+    111 Putin
+    118 Bales2022FilmChallenge
+    120 COVID
+    122 "Russia,Ukraine"
+    135 BA2
+    136 Kyiv
+    168 Mariupol
+    176 Omicron
+    177 AmiesMovieRating
+    181 StandWithUkraine
+    208 auspol
+    257 PMQs
+    305 BREAKING
+    320 Russia
+    833 "FBPE,FollowBackFriday"
+    870 LongCovid
+    945 COVID19
+   1266 Ukraine
+  20647
+
+ 

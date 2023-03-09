@@ -1,0 +1,21 @@
+ 1024  ls
+ 1025  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv a2/
+ 1026  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv  a2/
+ 1027  cd a2
+ 1028  ls
+ 1029  head downloaded_tweets_extend_
+ 1030  head downloaded_tweets_extend_nolf2.tsv 
+ 1031  nano a2.txt
+ 1032  cut -f2 downloaded_tweets_extend_original_nolf2.tsv|sort -k1|uniq -c|sort -n|tail -10
+ 1033  nano a2.txt 
+ 1034  cut -f6 downloaded_tweets_extend_original_nolf2.tsv|sort -k1|uniq -c|sort -n|tail -10
+ 1035  nano a2.txt 
+ 1036  cut -f1,5 downloaded_tweets_extend_nolf2.tsv|grep -i "retweeted"|sort -k1|uniq -w18 -c|sort -n|tail -10
+ 1037  nano a2.txt 
+ 1038  grep -o -E '#\w+' downloaded_tweets_extend_nolf2.tsv | sort | uniq -c | sort -rn | head -n 
+ 1039  grep -o -E '#\w+' downloaded_tweets_extend_nolf2.tsv | sort | uniq -c | sort -rn | head -n 30
+ 1040  nano a2.txt 
+ 1041  cut -f4 downloaded_tweets_extend_nolf2.tsv|sort|uniq -c|sort -n|tail -30
+ 1042  nano a2.txt 
+ 1043  ls
+ 1044  history > cmds.log
