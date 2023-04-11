@@ -1,0 +1,64 @@
+  972  ls
+  973  mkdir a3
+  974  cd a2
+  975  ls
+  976  cd ..
+  977  cp a2/downloaded_tweets_extend_nolf2.tsv a3/
+  978  ls
+  979  cd a3
+  980  ls
+  981  cut -f2,6 downloaded_tweets_extend_nolf2.tsv|sort -k2|uniq -f1 -c|sort -n > task1.txt
+  982  cat task1.txt 
+  983  CLEAR
+  984  clear
+  985  head task1.txt 
+  986  awk '{print $1}' task1.txt | uniq -c | sort -k 1n | awk '{ if ($1 >= 3) {print} }' > task2.txt
+  987  head task2.txt 
+  988  set terminal svg enhanced size 800,600
+  989  set output 'h1.svg'
+  990  bin_size = 1
+  991  find gunplot
+  992  find gnuplot
+  993  find .\ gnuplot
+  994  locate gnuplot
+  995  /etc/gnuplot-5.4.4/src/gnuplot
+  996  ls
+  997  cat h1.svg 
+  998  rm h1.svg 
+  999  ls
+ 1000  /etc/gnuplot-5.4.4/src/gnuplot
+ 1001  ls
+ 1002  cd a3
+ 1003  ls
+ 1004  cat task1.txt 
+ 1005  ls
+ 1006  cat task1.txt 
+ 1007  cat task2.txt 
+ 1008  ls
+ 1009  /etc/gnuplot-5.4.4/src/gnuplot
+ 1010  ls
+ 1011  /etc/gnuplot-5.4.4/src/gnuplot
+ 1012  rm h1.svg 
+ 1013  /etc/gnuplot-5.4.4/src/gnuplot
+ 1014  rm h4.svg 
+ 1015  /etc/gnuplot-5.4.4/src/gnuplot
+ 1016  ls
+ 1017  /etc/gnuplot-5.4.4/src/gnuplot
+ 1018  rm h1.svg 
+ 1019  rm h4.svg 
+ 1020  /etc/gnuplot-5.4.4/src/gnuplot
+ 1021  ls
+ 1022  /etc/gnuplot-5.4.4/src/gnuplot
+ 1023  ls
+ 1024  /etc/gnuplot-5.4.4/src/gnuplot
+ 1025  cd ..
+ 1026  cd github/CS131/
+ 1027  ls
+ 1028  mkdir a3
+ 1029  cd ..
+ 1030  ls
+ 1031  cp a3/* github/CS131/a3/
+ 1032  cd github/CS131/a3/
+ 1033  ls
+ 1034  rm downloaded_tweets_extend_nolf2.tsv 
+ 1035  history>cmds.log
