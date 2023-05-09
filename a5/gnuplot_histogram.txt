@@ -1,0 +1,11 @@
+set terminal svg size 800,600
+set output 'h.svg'
+set xlabel 'Buying'
+set ylabel 'Frequency'
+set boxwidth 0.9
+set style data histogram
+set style histogram cluster gap 1
+set style fill solid 1.0 border -1
+set datafile separator ","
+plot 'car_data_numerical.txt' using 2:xtic(1) title 'Buying' with boxes lc rgb "blue"
+

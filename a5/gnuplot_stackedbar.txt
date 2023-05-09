@@ -1,0 +1,12 @@
+set terminal svg size 800,600
+set output 'sb.svg'
+set xlabel 'Doors'
+set ylabel 'Frequency'
+set boxwidth 0.9
+set style data histogram
+set style histogram rowstacked
+set style fill solid 1.0 border -1
+set datafile separator ","
+set key outside right center
+set autoscale y
+plot 'car_data_numerical.txt' using 3:xtic(1) title '2 persons' with boxes lc rgb "blue", '' using 4:xtic(1) title '4 persons' with boxes lc rgb "green", '' using 5:xtic(1) title 'more persons' with boxes lc rgb "red"

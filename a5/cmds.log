@@ -1,0 +1,136 @@
+  953  cat data.csv 
+  954  wc -l data.csv 
+  955  cd ..
+  956  cd train/
+  957  wc -l data.csv 
+  958  cd ..
+  959  wc -l winequality-red.csv 
+  960  ls
+  961  cd ..
+  962  cd github/CS131/
+  963  ls
+  964  mkdir a4
+  965  cd ..
+  966  cp a4/* github/CS131/a4/
+  967  cp -r a4/* github/CS131/a4/
+  968  cd github/CS131/a4/
+  969  ls
+  970  rm winequality-red.csv 
+  971  ls test/
+  972  ls train/
+  973  git add *
+  974  git status
+  975  git commit -m "Initial Commit"
+  976  git push origin DHRU_FULETRA 
+  977  ls
+  978  mkdir a5
+  979  cd a5
+  980  wget https://drive.google.com/file/d/13lbPDxlEI-ceKCR0H2a9glrgAOukV_Vt/view?usp=sharing
+  981  ls
+  982  rm *
+  989  ls
+  990  head car.data 
+  991  cd a5
+  992  ls
+  993  wc -l car.data 
+  994  head car.data 
+  995  ls
+  996  head car.data 
+  997  cat car.data 
+  998  wc -l car.data 
+  999  wc car.data 
+ 1000  ls
+ 1001  cd a5
+ 1002  head car.data 
+ 1003  awk '{print $1}' car.data 
+ 1004  ls
+ 1005  awk -F, '{
+  gsub("vhigh", "4", $1); gsub("high", "3", $1); gsub("med", "2", $1); gsub("low", "1", $1);
+  gsub("vhigh", "4", $2); gsub("high", "3", $2); gsub("med", "2", $2); gsub("low", "1", $2);
+  gsub("5more", "5", $3);
+  gsub("more", "6", $4);
+  gsub("small", "1", $5); gsub("med", "2", $5); gsub("big", "3", $5);
+  gsub("low", "1", $6); gsub("med", "2", $6); gsub("high", "3", $6);
+  gsub("unacc", "1", $7); gsub("acc", "2", $7); gsub("good", "3", $7); gsub("vgood", "4", $7);
+  print $1 "," $2 "," $3 "," $4 "," $5 "," $6 "," $7;
+}' car.data > car_data_numerical.txt
+ 1006  ls
+ 1007  cat car_data_numerical.txt 
+ 1008  gnuplot -p -e "set terminal pngcairo enhanced size 800,600; set output 'histogram_buying.png'; set style data histogram; set style histogram cluster gap 1; set style fill solid border -1; set boxwidth 0.9; set xlabel 'Buying'; set ylabel 'Frequency'; plot 'car_data_numerical.txt' using 2:xtic(1) title 'Buying' with boxes"
+ 1009  gnuplot --version
+ 1010  apt -get install gnuplot
+ 1011  apt-get install gnuplot
+ 1012  sudo apt-get update
+ 1013  apt-get update
+ 1014  apt update
+ 1015  aptitude update
+ 1016  cat /etc/os-release 
+ 1017  gnuplot
+ 1018  yum
+ 1019  yum install gnuplot
+ 1020  cd ..
+ 1021  gnuplot
+ 1022  locate gnuplot
+ 1023  /etc/gnuplot-5.4.4/src/gnuplot
+ 1024  cd at
+ 1025  cd a5
+ 1026  /etc/gnuplot-5.4.4/src/gnuplot
+ 1027  ls
+ 1028  rm histogram_buying.png 
+ 1029  /etc/gnuplot-5.4.4/src/gnuplot
+ 1030  ls
+ 1031  cut -d',' -f7 car.data | sort | uniq -c
+ 1032  cut -d',' -f1,2 car.data | sort | uniq -c
+ 1033  awk -F, '$7 == "vgood" {print $3}' car.data | sort | uniq -c
+ 1034  grep -c ',low,' car.data
+ 1035  awk -F, '$6 == "high" {print $5}' car.data | sort | uniq -c
+ 1036  gnuplot
+ 1037  cd ..
+ 1038  wget https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.6/gnuplot-5.4.6.tar.gz
+ 1039  ls
+ 1040  gzip -d gnuplot-5.4.6.tar.gz
+ 1041  tar xvf gnuplot-5.4.6.tar
+ 1042  cd gnuplot-5.4.6/
+ 1043  ./configure --disable-dependency-tracking
+ 1044  make
+ 1045  make check
+ 1046  cd src/
+ 1047  ./gnuplot
+ 1048  cd ..
+ 1049  ls
+ 1050  cd a5
+ 1051  gnuplot
+ 1052  cd ..
+ 1053  gnuplot
+ 1054  ls
+ 1055  rm histogram_buying.png 
+ 1056  cd src/
+ 1057  cd gnuplot-5.4.6/
+ 1058  ls
+ 1059  cd src/
+ 1060  ./gnuplot 
+ 1061  cd ..
+ 1062  cd  a5
+ 1063  /etc/gnuplot-5.4.4/
+ 1064  ls /etc/
+ 1065  /home/dhru23sp/
+ 1066  /etc/gnuplot-5.4.4/src/gnuplot
+ 1067  ls
+ 1068  rm histogram_buying.jpg 
+ 1069  /etc/gnuplot-5.4.4/src/gnuplot
+ 1070  ls
+ 1071  rm sh.svg 
+ 1072  /etc/gnuplot-5.4.4/src/gnuplot
+ 1073  ls
+ 1074  rm h.svg 
+ 1075  /etc/gnuplot-5.4.4/src/gnuplot
+ 1076  ls
+ 1077  history
+ 1078  clear
+ 1079  nano gnuplot_histogram.txt
+ 1080  nano gnuplot_stackedbar.txt
+ 1081  ls
+ 1082  awk -F, '{count[$7]++} END {for (key in count) print key, count[key]}' car.data | sort -k2 -n -r
+ 1083  awk -F, '{count[$1","$2","$7]++} END {for (key in count) print key, count[key]}' car.data | sort -k2 -n -r
+ 1084  awk -F, '{count[$3","$4","$7]++} END {for (key in count) print key, count[key]}' car.data | sort -k2 -n -r
+ 1085  history >cmds.log
